@@ -3,10 +3,9 @@ package com.zeal.ecom_project.controller;
 import com.zeal.ecom_project.model.Product;
 import com.zeal.ecom_project.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -18,15 +17,22 @@ public class ProductController {
     @Autowired
     private ProductService service;
 
-    @RequestMapping("/")
-    public String greet(){
-        return "hello ";
-    }
-
     @GetMapping("/products")
-    public List<Product> getAllProduct(){
-        return service.getAllProduct();
+    public ResponseEntity<List<Product>> getAllProduct(){
+        return new ResponseEntity<>(service.getAllProduct(), HttpStatus.OK);
     }
 
+    @GetMapping("/product/{id}")
+    public ResponseEntity<Product> getProductById(@PathVariable int id){
+
+        Product product = service.getProductById(id);
+        if (product != null){
+            return new ResponseEntity<>(service.getProductById(id),HttpStatus.FOUND);
+        }
+        else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+    }
 
 }

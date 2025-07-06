@@ -13,8 +13,11 @@ public class ProductService {
     @Autowired
     private ProductRepo repo;
 
-    public List<Product> getAllProduct(){
+    public List<Product> getAllProduct() {
         return repo.findAll();
     }
 
+    public Product getProductById(int id) {
+        return repo.findById(id).orElse(null);
+    }
 }
