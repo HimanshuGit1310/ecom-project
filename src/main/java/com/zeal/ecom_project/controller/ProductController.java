@@ -19,20 +19,17 @@ public class ProductController {
 
     @GetMapping("/products")
     public ResponseEntity<List<Product>> getAllProduct(){
-        return new ResponseEntity<>(service.getAllProduct(), HttpStatus.OK);
+        return new ResponseEntity<>(service.getAllProduct(),HttpStatus.OK);
     }
 
     @GetMapping("/product/{id}")
     public ResponseEntity<Product> getProductById(@PathVariable int id){
-
         Product product = service.getProductById(id);
-        if (product != null){
-            return new ResponseEntity<>(service.getProductById(id),HttpStatus.FOUND);
-        }
-        else {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
 
+        if (product != null)
+            return new ResponseEntity<>(product,HttpStatus.OK);
+        else
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
 }
