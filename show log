@@ -1,0 +1,43 @@
+[33mcommit c1f43bf6f2dc5fe775db56fe9c2210aee1b66150[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32maddProduct-with-image[m[33m)[m
+Author: HimanshuGit1310 <himanshujhariyazeal@gmail.com>
+Date:   Mon Jul 7 22:21:25 2025 +0530
+
+    update and delete feature
+
+[33mcommit 9089003641cf9ac62dab9057b813012bed5e5552[m[33m ([m[1;31morigin/response-entity[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/addProduct-with-image[m[33m, [m[1;32mresponse-entity[m[33m, [m[1;32mmain[m[33m)[m
+Author: HimanshuGit1310 <himanshujhariyazeal@gmail.com>
+Date:   Sun Jul 6 23:38:56 2025 +0530
+
+    return null prodcut correction
+
+[33mcommit 9a156390cf2df90ef74f766c32dda43786e1214c[m
+Author: HimanshuGit1310 <himanshujhariyazeal@gmail.com>
+Date:   Sun Jul 6 23:07:59 2025 +0530
+
+    added status code and fetch product by id feature
+
+[33mcommit 9f7d359565d16d3d0001a5ea1aa1bb227154603f[m[33m ([m[1;31morigin/loading-data[m[33m, [m[1;32mloading-data[m[33m)[m
+Author: HimanshuGit1310 <himanshujhariyazeal@gmail.com>
+Date:   Sun Jul 6 15:03:27 2025 +0530
+
+    loading product in home page and connect backend
+
+[33mcommit 0fc7165b7bbf2518faee29c14741fa1cc1da8f6e[m
+Author: HimanshuGit1310 <himanshujhariyazeal@gmail.com>
+Date:   Sun Jul 6 10:51:14 2025 +0530
+
+    set directory and basic congig.
+
+[33mcommit fc7f7777d840284f7ba44d3569115b4cc66ce72b[m
+Author: Himanshu Jhariya <himanshujhariyazeal@gmail.com>
+Date:   Sun Jul 6 10:30:24 2025 +0530
+
+    Update README.md
+    
+    Working as a trainer teacher in a computer coaching center affiliated with Makhanlal Chaturvedi University Bhopal.
+
+[33mcommit 8ea0123d35d49909eaa291f43f68c844c6e0618f[m
+Author: Himanshu Jhariya <himanshujhariyazeal@gmail.com>
+Date:   Sat Jul 5 23:41:17 2025 +0530
+
+    Initial commit
